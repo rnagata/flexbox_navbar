@@ -2,3 +2,37 @@ body{
     margin: 0;
     font-family: 'ZCOOL KuaiLe', cursive;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: crimson;
+    padding: 20px;
+    
+}
+
+a {
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a :hover {
+    color: greenyellow;
+}
+
+@media screen and (max-width: 920px){
+    nav {
+        justify-content: space-around;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav {
+        flex-direction: column;
+    }
+}
